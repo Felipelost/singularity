@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Singularity</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Singularity</h1>
+        <p>Explore o desconhecido</p>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="portfolio.html">Portifólio</a>
+            <a href="contato.html" class="ativo" aria-current="page">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Entre em contato</h2>
+            <p>
+                Tem uma ideia ou quer conhecer nossos serviços? Fale
+                com a Singularity.
+            </p>
+        </section>
+        <form class="formulario-contato">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required maxlength="100">
+
+            <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="email" required maxlength="254">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" rows="5" required maxlength="2000"></textarea>
+        <button type="submit" class="botao">Enviar mensagem</button>
+        </form>
+        <p id="retorno-contato" role="status"></p>
+    </main>
+
+    <footer>
+        <p>Singularity - Explore o desconhecido</p>
+        <p>A atração conquista. A qualidade fideliza.</p>
+    </footer>
+    
+    <script src="js/contato.js"></script>
+</body>
+</html>

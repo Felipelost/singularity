@@ -1,0 +1,193 @@
+body{
+    margin: 0;
+    background-color: #0b0b0f;
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../imagens/buraco-negro.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #15151c;
+    padding: 24px;
+    text-align: center;
+    border-bottom: 2px solid #ff9800;
+}
+
+header h1{
+    margin:0;
+    color: #ff9800;
+    font-size: 36px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+nav a{
+    color: #f5f5f5;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #ff9800;
+}
+nav a.ativo{
+    color: #ff9800;
+    font-weight: bold;
+}
+
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    flex-grow: 1;
+    background-color: transparent;
+}
+
+main h2{
+    color: #ff9800;
+    font-size: 28px;
+}
+main p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+main section{
+    margin-bottom: 32px;
+}
+
+main li{
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.botao{
+    display: inline-block;
+    background-color: #ff9800;
+    color: #0b0b0f;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+.botao:hover{
+    background-color: #ffb74d;
+}
+
+footer{
+    background-color: #15151c;
+    padding: 24px;
+    text-align: center;
+    border-top: 1px solid #ff9800;
+}
+
+a:focus-visible{
+    outline: 2px solid #ff9800;
+    outline-offset: 4px;
+}
+
+.servicos,
+.valores{
+    background-color: rgba(34,34,34,0.85);
+    padding: 20px;
+  
+    border-radius: 10px;
+
+}
+.servicos{
+    margin: 20px 0;
+    border: 1px solid #ff9900;
+}
+.servicos h2,
+.valores h2{
+    color: #ff9900;
+}
+.servicos p{
+    color: #cccccc;
+}
+.servicos li{
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 6px;
+}
+.servicos li:last-child{
+    margin-bottom: 0;
+    color: #ff9900;
+}
+.servicos li:first-child{
+    color: #ff9900;
+}
+
+.servicos li:nth-child(2){
+    color: #ff9900;
+}
+.servicos li:hover{
+    background-color: #333333;
+}
+
+
+
+.valores li{
+    margin-bottom: 10px;
+}
+.valores li:last-child{
+    margin-bottom: 0;
+}
+.valores li:nth-child(2){
+    color: #ff9900;
+}
+
+.projeto{
+    background-color: rgba(34,34,34,0.85);
+    padding: 24px;
+    border: 1px solid #ff9800;
+    border-radius: 10px;
+}
+.projeto h3{
+    color: #ff9800;
+    font-size: 22px;
+}
+.projeto img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.formulario-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.formulario-contato input,
+.formulario-contato textarea{
+    padding: 12px;
+    background-color: #15151c;
+    color: #f5f5f5;
+    border: 1px solid #ff9800;
+    border-radius: 6px;
+    font: inherit;
+    resize: vertical;
+}
+.formulario-contato input:focus-visible,
+.formulario-contato textarea:focus-visible,
+.formulario-contato button:focus-visible{
+    outline: 2px solid #ffb74d;
+    outline-offset: 3px;
+}
